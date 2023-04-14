@@ -6,13 +6,11 @@
 /*   By: rbenjamim <rbenjamim@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 19:04:24 by rbenjamim         #+#    #+#             */
-/*   Updated: 2023/03/08 19:04:27 by rbenjamim        ###   ########.fr       */
+/*   Updated: 2023/04/13 16:50:00 by rbenjamim        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int ft_isprint(int c)
 {
-    if (c > 31 && c < 127)
-        return (16384);
-    return (0);
+    return(c > 31 && c < 127);
 }

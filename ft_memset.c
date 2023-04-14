@@ -1,16 +1,13 @@
-#include <stdio.h>
-#include <string.h>
-void    *memset(void *str, int c, size_t  n)
+void    *memset(void *s, int c, size_t n)
 {
-    while (*str)
-     {
+    unsigned char *str;
+    unsigned char cbyte;
 
-     }
-}
-
-int main ()
-{
-    char buffer[10];
-
-    memset(buffer, 'a', sizeof(char))
+    *str = s;
+    cbyte = c;
+    while(n--)
+    {
+        *str++ = cbyte;
+    }
+    return (s);
 }

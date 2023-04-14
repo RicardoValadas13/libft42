@@ -3,7 +3,7 @@ int ft_strlen(char *str)
     int cnt;
 
     cnt = 0;
-    while(str*)
+    while(*str++)
         cnt++;
     return(cnt);
 }
