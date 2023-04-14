@@ -1,12 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/04/14 11:22:53 by rbenjami          #+#    #+#             */
+/*   Updated: 2023/04/14 11:49:02 by rbenjami         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
 int ft_isalpha(int c)
 {
-    return (c>= 'A' && c <= 'Z' || c >= 'a' && c <= 'z');
-}
-
-#include <stdio.h>
-#include <ctype.h>
-int main()
-{
-    printf("%d \n", ft_isalpha('1'));
-    printf("%d \n", isalpha('1'));
+    return (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z');
 }

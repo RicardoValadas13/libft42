@@ -1,19 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_atoifirst.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/14 11:24:59 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/14 11:27:56 by rbenjami         ###   ########.fr       */
+/*   Created: 2023/04/14 11:23:41 by rbenjami          #+#    #+#             */
+/*   Updated: 2023/04/14 11:26:36 by rbenjami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_tolower(int c)
+int ft_atoi(const char *nptr)
 {
-    if(c > 96 && c < 123)
-        return(c - 32);
-    return (c);
+    int nbr;
+    int signal;
+    
+    nbr = 0;
+    signal = 1;
+    while (*nptr > 8 && *nptr < 14 || *nptr == ' ')
+        nptr++;
+    if (*nptr == '-')
+        signal *= -1;
+    if (*nptr == '+' || *nptr == '-')
+        nptr++;
+    while (*nptr >= '0' && *nptr <= '9')
+    {
+        nbr = nbr * 10 + *nptr - 48;
+        nptr++;
+    }
+    return (nbr * signal);
 }
