@@ -13,23 +13,16 @@
 #include "libft.h"
 char	*ft_strchr(const char *s, int c)
 {
+	unsigned char d;
+
+	d = c;
 	while (*s)
 	{
-		if (*s == c)
+		if (*s == d)
 			return ((char *)s);
 		s++;
 	}
+	if (*s == d)
+		return ((char *)s);
 	return (NULL);
 }
-
-/* #include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-	char str[] = "OLA";
-	char c = 'A';
-
-	printf("%s \n", strchr(str, c));
-	printf("%s \n", ft_strchr(str, c));
-} */

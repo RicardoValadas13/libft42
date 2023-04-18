@@ -6,17 +6,17 @@
 /*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 11:24:46 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/14 11:27:46 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/18 12:38:58 by rbenjami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_strlen(char *str)
+size_t ft_strlen(const char *str)
 {
     int cnt;
 
     cnt = 0;
-    while(*str++)
+    while(str[cnt])
         cnt++;
     return(cnt);
 }

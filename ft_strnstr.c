@@ -1,4 +1,17 @@
-#include <stdlib.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/04/18 12:43:25 by rbenjami          #+#    #+#             */
+/*   Updated: 2023/04/18 12:43:33 by rbenjami         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
 char *ft_strnstr(const char *big, const char *little, size_t len)
 {
     size_t i;
@@ -25,7 +38,7 @@ char *ft_strnstr(const char *big, const char *little, size_t len)
     return (NULL);
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 #include <bsd/string.h>
 int main()
 {
@@ -34,4 +47,4 @@ int main()
 
     printf("Original: %s\n", strnstr(largestring, smallstring, 5));
     printf("Replicated: %s\n", ft_strnstr(largestring, smallstring, 5));
-}
+} */

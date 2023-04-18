@@ -1,20 +1,24 @@
-#include <stdlib.h>
-int ft_strlen(char *str)
-{
-    int cnt;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/04/18 12:43:40 by rbenjami          #+#    #+#             */
+/*   Updated: 2023/04/18 14:11:13 by rbenjami         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    cnt = 0;
-    while(*str++)
-        cnt++;
-    return(cnt);
-}
+#include "libft.h"
+
 char *ft_strrchr(const char *s, int c)
 {
     char * str;
     int ssize;
 
     str = (char *)s;
-    ssize = ft_strlen(str);
+    ssize = ft_strlen(s);
     while (ssize--)
 	{
 		if (str[ssize] == c)

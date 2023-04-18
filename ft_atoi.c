@@ -6,7 +6,7 @@
 /*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 11:23:48 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/14 11:26:39 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/18 14:05:32 by rbenjami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_atoi(char *nptr)
 
 	nbr = 0;
 	signal = 1;
-	if (*nptr == 32 || *nptr > 8 && *nptr < 14)
+	if (*nptr == 32 || (*nptr > 8 && *nptr < 14))
 		nptr++;
 	if (*nptr == '-')
 	{

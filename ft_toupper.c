@@ -6,12 +6,12 @@
 /*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 11:24:59 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/14 11:27:56 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/18 12:32:47 by rbenjami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_tolower(int c)
+int ft_toupper(int c)
 {
     if(c > 96 && c < 123)
         return(c - 32);

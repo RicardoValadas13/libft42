@@ -1,5 +1,17 @@
-#include <unistd.h>
-#include <stdlib.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/04/18 12:44:27 by rbenjami          #+#    #+#             */
+/*   Updated: 2023/04/18 12:44:35 by rbenjami         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
 char  *ft_substr(char const *s, unsigned int start, size_t len)
 {
   char *substr;
@@ -21,10 +33,10 @@ char  *ft_substr(char const *s, unsigned int start, size_t len)
 	substr[j] = '\0';
   return(substr);
 }
-#include <stdio.h>
+/* #include <stdio.h>
 int main()
 {
   char str[11] = "Ola como ol";
 
   printf("%s \n", ft_substr(str,4,3));
-}
+} */

@@ -1,13 +1,16 @@
-#include <stdlib.h>
-int ft_strlen(char *str)
-{
-    int cnt;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/04/18 12:41:55 by rbenjami          #+#    #+#             */
+/*   Updated: 2023/04/18 14:09:37 by rbenjami         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    cnt = 0;
-    while(*str++)
-        cnt++;
-    return(cnt);
-}
+#include "libft.h"
 
 size_t ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -15,7 +18,8 @@ size_t ft_strlcat(char *dst, const char *src, size_t size)
     size_t dst_len;
     size_t i;
 
-    src_len = ft_strlen((char *)src);
+    i = 0;
+    src_len = ft_strlen(src);
     dst_len = ft_strlen(dst);
     if (dst_len < size)
     {
