@@ -1,7 +1,8 @@
 #include "libft.h"
+#include <stdlib.h>
 strlcpy(char *dst, const char *src, size_t size)
 {
-  int i;
+  size_t i;
 
   i = 0;
   if (size == 0)

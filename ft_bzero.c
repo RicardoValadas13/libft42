@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rbenjamim <rbenjamim@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 11:23:36 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/14 11:26:30 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/17 12:06:30 by rbenjamim        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 void	ft_bzero(void *s, size_t n)
 {
+	char *str = (char *) s; 
 	while (n-- > 0)
 	{
-		s = 0;
-		s++;
+		*str++ = 0;
 	}
 }
