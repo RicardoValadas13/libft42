@@ -6,12 +6,13 @@
 /*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 11:22:36 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/18 12:28:36 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/20 12:29:53 by rbenjami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_isdigit(int c)
+
+int	ft_isdigit(int c)
 {
-   return(c >= '0' && c <= '9');    
+	return (c >= '0' && c <= '9');
 }

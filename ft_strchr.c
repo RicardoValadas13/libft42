@@ -6,14 +6,15 @@
 /*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 11:24:19 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/14 11:27:41 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/20 12:31:23 by rbenjami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 char	*ft_strchr(const char *s, int c)
 {
-	unsigned char d;
+	unsigned char	d;
 
 	d = c;
 	while (*s)

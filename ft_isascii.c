@@ -6,12 +6,13 @@
 /*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 11:22:43 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/14 11:26:50 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/20 12:29:48 by rbenjami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_isascii(int c)
+
+int	ft_isascii(int c)
 {
-   return(c >= 0 && c <= 127);
+	return (c >= 0 && c <= 127);
 }

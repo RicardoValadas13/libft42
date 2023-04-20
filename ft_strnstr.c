@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbenjamim <rbenjamim@student.42.fr>        +#+  +:+       +#+        */
+/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 12:43:25 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/19 12:25:12 by rbenjamim        ###   ########.fr       */
+/*   Updated: 2023/04/20 12:32:04 by rbenjami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-    size_t	i;
+	size_t	i;
 	size_t	j;
-	
+
 	i = 0;
 	if (!*little)
 		return ((char *)big);
@@ -26,7 +26,7 @@ char *ft_strnstr(const char *big, const char *little, size_t len)
 		while (big[i + j] == little[j] && i + j < len)
 		{
 			if (little[j + 1] == '\0')
-				return ((char*)(big + i));
+				return ((char *)(big + i));
 			j++;
 		}
 		i++;
@@ -36,7 +36,8 @@ char *ft_strnstr(const char *big, const char *little, size_t len)
 
 /* #include <stdio.h>
 #include <bsd/string.h>
-int main()
+
+int	main(void)
 {
     const char *largestring = "Foo Bar Baz";
     const char *smallstring = "Bar";

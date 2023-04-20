@@ -6,14 +6,15 @@
 /*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 11:24:55 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/14 11:27:52 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/20 12:32:22 by rbenjami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_tolower(int c)
+
+int	ft_tolower(int c)
 {
-    if(c > 64 && c < 91)
-        return(c + 32);
-    return (c);
+	if (c > 64 && c < 91)
+		return (c + 32);
+	return (c);
 }

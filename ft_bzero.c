@@ -6,14 +6,17 @@
 /*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 11:23:36 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/18 12:39:23 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/20 12:29:32 by rbenjami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	ft_bzero(void *s, size_t n)
 {
-	char *str = (char *) s; 
+	char	*str;
+
+	str = (char *)s;
 	while (n-- > 0)
 	{
 		*str++ = 0;
