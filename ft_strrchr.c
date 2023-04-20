@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rbenjamim <rbenjamim@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 12:43:40 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/18 14:11:13 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/20 09:13:08 by rbenjamim        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,16 @@
 
 char *ft_strrchr(const char *s, int c)
 {
-    char * str;
+    unsigned char d;
     int ssize;
-
-    str = (char *)s;
+    
+    d = c;
     ssize = ft_strlen(s);
-    while (ssize--)
+    while (ssize >= 0)
 	{
-		if (str[ssize] == c)
-			return (&str[ssize]);
+		if (s[ssize] == d)
+			return ((char *)s + ssize);
+        ssize--;
 	}
 	return (NULL);
-}
-#include <stdio.h>
-
-int main()
-{
-    const char *largestring = "Foo Bar Baz";
-    char smallstring = 'B';
-
-    printf("Replicated: %s\n", ft_strrchr(largestring, smallstring));
 }

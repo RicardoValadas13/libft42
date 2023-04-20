@@ -1,42 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbenjamim <rbenjamim@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/18 12:44:27 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/19 18:00:04 by rbenjamim        ###   ########.fr       */
+/*   Created: 2023/04/20 09:25:50 by rbenjamim         #+#    #+#             */
+/*   Updated: 2023/04/20 09:42:50 by rbenjamim        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char  *ft_substr(char const *s, unsigned int start, size_t len)
+char    *ft_strdup(const char  *s)
 {
-	char *substr;
-	size_t i;
-  	size_t j;
-  
-  	i = 0;
-  	j = 0;
-  	substr = (char *)malloc(len + 1);
-		while (s[i])
-		{
-			if (i >= start && j < len)
-			{
-				substr[j] = s[i];
-				j++;
-			}
-		i++;
-		}
-	substr[j] = '\0';
-	return(substr);
-}
-/* #include <stdio.h>
-int main()
-{
-  char str[11] = "Ola como ol";
+    char *dupstr;
+    int i;
 
-  printf("%s \n", ft_substr(str,4,3));
-} */
+    i = 0;
+    dupstr = (char *)malloc(ft_strlen(s) * sizeof(char) + 1);
+    if (!dupstr)
+        return (0);
+    while (dupstr[i])
+    {
+        dupstr[i] = s[i];
+        i++;
+    }
+    dupstr[i] = '\0';
+    return (dupstr);
+}

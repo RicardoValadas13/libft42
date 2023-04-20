@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rbenjamim <rbenjamim@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 12:43:25 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/18 12:43:33 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/19 12:25:12 by rbenjamim        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,24 @@
 
 char *ft_strnstr(const char *big, const char *little, size_t len)
 {
-    size_t i;
-    size_t j;
-    char *bigstr;
-    char *littlestr;
-
-    bigstr = (char *) big;
-    littlestr = (char *) little;
-    i = 0;    
-    if (!littlestr)
-        return (bigstr);
-    while (i < len && bigstr[i] != '\0')
-    {
-        j = 0;
-        while (littlestr[j] != '\0')
-        {
-            if (bigstr[i] == littlestr[j])
-                return (&bigstr[i]);
-            j++;
-        }
-        i++;
-    }    
-    return (NULL);
+    size_t	i;
+	size_t	j;
+	
+	i = 0;
+	if (!*little)
+		return ((char *)big);
+	while (big[i] && i < len)
+	{
+		j = 0;
+		while (big[i + j] == little[j] && i + j < len)
+		{
+			if (little[j + 1] == '\0')
+				return ((char*)(big + i));
+			j++;
+		}
+		i++;
+	}
+	return (0);
 }
 
 /* #include <stdio.h>
