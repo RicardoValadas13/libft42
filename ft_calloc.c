@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rbenjamim <rbenjamim@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 16:13:47 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/20 12:29:21 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/21 10:03:37 by rbenjamim        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	unsigned long int i;
-	unsigned long int l_size;
-	unsigned long int l_type;
-	char *memory;
+	unsigned long int	i;
+	unsigned long int	l_size;
+	unsigned long int	l_type;
+	char				*memory;
 
 	i = 0;
 	l_type = size;

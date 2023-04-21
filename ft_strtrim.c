@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rbenjamim <rbenjamim@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 12:44:08 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/20 13:32:40 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/21 10:05:56 by rbenjamim        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	unsigned int end;
-	size_t size;
+	unsigned int	end;
+	size_t			size;
 
 	while (*s1 && ft_strchr(set, *s1))
 		s1++;

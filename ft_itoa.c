@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rbenjamim <rbenjamim@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 09:57:39 by rbenjamim         #+#    #+#             */
-/*   Updated: 2023/04/20 13:31:41 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/21 10:06:49 by rbenjamim        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,14 +45,14 @@ char	*ft_number(char *str, long n, int len)
 
 char	*ft_itoa(int n)
 {
-	char		*str;
-	int			len_n;
-	long nbr;
+	char	*str;
+	int		len_n;
+	long	nbr;
 
 	nbr = n;
 	len_n = ft_len(n);
 	str = (char *)malloc(len_n + 1);
-	if(!str)
+	if (!str)
 		return (0);
 	if (nbr < 0)
 	{

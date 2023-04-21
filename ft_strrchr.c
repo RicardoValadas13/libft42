@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rbenjamim <rbenjamim@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 12:43:40 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/20 12:32:08 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/04/21 10:05:52 by rbenjamim        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	unsigned char d;
-	int ssize;
+	unsigned char	d;
+	int				ssize;
 
 	d = c;
 	ssize = ft_strlen(s);
