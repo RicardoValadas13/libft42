@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ricardovaladas <ricardovaladas@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 11:23:36 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/20 12:29:32 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/10/26 11:07:00 by ricardovala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

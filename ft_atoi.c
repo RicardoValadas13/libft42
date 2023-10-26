@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ricardovaladas <ricardovaladas@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 11:23:48 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/20 12:29:28 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/10/26 11:06:14 by ricardovala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,14 @@ int	ft_atoi(char const *nptr)
 	signal = 1;
 	while (nptr[i] == 32 || (nptr[i] > 8 && nptr[i] < 14))
 		i++;
-	if (nptr[i] == '-')
+	while (nptr[i] == '-' || nptr[i] == '+')
 	{
-		signal *= -1;
+		if (nptr[i + 1] == '-' || nptr[i + 1] == '+')
+			return (0);
+		if (nptr[i] == '-')
+			signal *= -1;
 		i++;
 	}
-	else if (nptr[i] == '+')
-		i++;
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
 		nbr *= 10;
@@ -38,9 +39,3 @@ int	ft_atoi(char const *nptr)
 	}
 	return (nbr * signal);
 }
-
-/* #include <stdio.h>
-int	main(void)
-{
-	printf("Result: %d\n",ft_atoi("\t 10"));
-} */

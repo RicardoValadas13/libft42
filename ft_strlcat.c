@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ricardovaladas <ricardovaladas@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 12:41:55 by rbenjami          #+#    #+#             */
-/*   Updated: 2023/04/20 12:31:42 by rbenjami         ###   ########.fr       */
+/*   Updated: 2023/10/26 11:16:05 by ricardovala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	j = 0;
 	i = 0;
+	if (!src || !dst)
+		return (NULL);
 	src_len = ft_strlen(src);
 	dst_len = ft_strlen(dst);
 	j = dst_len;

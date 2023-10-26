@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbenjamim <rbenjamim@student.42.fr>        +#+  +:+       +#+        */
+/*   By: ricardovaladas <ricardovaladas@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 10:24:26 by rbenjamim         #+#    #+#             */
-/*   Updated: 2023/04/21 13:32:00 by rbenjamim        ###   ########.fr       */
+/*   Updated: 2023/10/26 11:14:55 by ricardovala      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	ft_mem(char const *s, char c)
 
 	i = 0;
 	j = 0;
-	while (*s)
+	while (s && *s)
 	{
 		if (*s != c && j == 0)
 		{
@@ -58,7 +58,7 @@ char	**ft_split(char const *s, char c)
 
 	new_s = (char **)malloc((ft_mem(s, c) + 1) * sizeof(char *));
 	if (!new_s || !s)
-		return (NULL);
+		return (free(new_s), NULL);
 	i = 0;
 	j = 0;
 	while (s[i])
