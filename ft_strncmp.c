@@ -23,12 +23,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		i++;
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-
-/*#include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-    printf("Original: %d\n", strncmp("abcdefgh", "abcdwxyz", 4));
-    printf("REplicated: %d\n", ft_strncmp("abcdefgh", "abcdwxyz", 4));
-}*/

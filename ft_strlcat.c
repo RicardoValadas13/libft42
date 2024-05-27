@@ -22,7 +22,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	j = 0;
 	i = 0;
 	if (!src || !dst)
-		return (NULL);
+		return (0);
 	src_len = ft_strlen(src);
 	dst_len = ft_strlen(dst);
 	j = dst_len;
@@ -37,15 +37,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[j] = '\0';
 	return (src_len + dst_len);
 }
-
-/*#include <stdio.h>
-#include <bsd/string.h>
-
-
-int	main(void)
-{
-    char str[20] = "Ola a";
-    char str1[7] = "Todos";
-    printf("Original: %ld", strlcat(str, str1, 5));
-    printf("Replicated: %ld", ft_strlcat(str, str1, 5));
-}*/

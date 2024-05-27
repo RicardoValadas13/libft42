@@ -38,11 +38,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str3[i] = '\0';
 	return (str3);
 }
-
-/* #include <stdio.h>
-int	main(void)
-{
-  const char str1[6] = "OLA A";
-  const char str2[6] = "TODOS";
-  printf("Result: %s\n", ft_strjoin(str1, str2));
-} */
